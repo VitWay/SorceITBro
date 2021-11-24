@@ -18,7 +18,38 @@
             <button>Коризина</button>
         </article>
     </header>
-    <main></main>
+    <main>
+        <form>
+            <div>
+                <label for='input_email'>Name</label>
+                <input type='text' name='name' required id='input_name' />
+            </div>
+
+            <div>
+                <label for='input_name'>Email</label>
+                <input type='email' name='email' required id='input_email' />
+            </div>
+
+            <div>
+                <label for='input_age'>Age</label>
+                <input type='number' name='age' required id='input_age' />
+            </div>
+            <div>
+                <label for='combobox_m_f'>Sex</label>
+                <select name='m_f' required>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                </select>
+            </div>
+
+            <input type="radio" name='resident' value="Ukraine" />
+            <input type="radio" name='resident' value="EU" />
+
+            <!--Actions-->
+            <button type='submit'>OK</button>
+            <button type='reset'>Camcel</button>
+        </form>
+    </main>
     <footer></footer>
 </body>
 
