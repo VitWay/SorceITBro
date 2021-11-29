@@ -1,26 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Third homework</title>
-    <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-    <header>
-       <!-- <link rel="conactForm" href="ContactFotm.html"/>-->
-        <img src="image/header.png" alt="header" height="200">
 
+<head>
+    <title>Third homework</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <h1>Main Header</h1>
+            <h2>
+                <small>And small sub</small>
+            </h2>
+            <!-- <link rel="conactForm" href="ContactFotm.html"/>-->
+            <!--<img src="image/header.png" alt="header" height="200">-->
+        </div>
     </header>
+    <!--/Header-->
+    <!--Navigation-->
+    <nav class="page-navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!--Login form-->
+            <form action='#' class="login">
+                <input type="text" placeholder="Login" required>
+                <input type="password" placeholder="Password" required>
+                <input type="submit" value="Sing in">
+            </form>
+            <!--/Login form-->
+        </div>
+    </nav>
+    <!--/Navigation-->
+
+    <!--Main section-->
     <main>
-        <ul>
-            <li><a href="http://lits.ua"LITS Academy></a></li>
-            <li><a href="http://lits.ua/cities"LITS Cities target="_blank"></a></li>
-        </ul>
+        <div>
+            <h2>Image Collect <small>Visualise</small></h2>
+            <div>
+                <div>
+                    <img src='image/grapefruit.jpg' alt="grapefruit" width="300">
+                </div>
+                <div>
+                    <h3>Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptate ullam reiciendis, molestiae vitae explicabo dolore,
+                        quae perspiciatis laborum voluptatem amet impedit
+                        fuga delectus consectetur recusandae voluptates
+                        eaque iste quod aliquam.</p>
+                    <button>Read More...</button>
+                </div>
+            </div>
+            <h2>Image Collect <small>Visualise</small></h2>
+            <div>
+                <div>
+                    <img src='image/grapefruit.jpg' alt="grapefruit" width="300">
+                </div>
+                <div>
+                    <h3>Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptate ullam reiciendis, molestiae vitae explicabo dolore,
+                        quae perspiciatis laborum voluptatem amet impedit
+                        fuga delectus consectetur recusandae voluptates
+                        eaque iste quod aliquam.</p>
+                    <button>Read More...</button>
+                </div>
+            </div>
+
+            <h2>Video Collect <small>Visualise</small></h2>
+            <div>
+                <div>
+                    <video>
+                        <source
+                            src="video/Вокальний ансамбль Пентархія «Батько наш Бандера» виконана у домі народження Сте.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3>Item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptate ullam reiciendis, molestiae vitae explicabo dolore,
+                        quae perspiciatis laborum voluptatem amet impedit
+                        fuga delectus consectetur recusandae voluptates
+                        eaque iste quod aliquam.</p>
+                    <button>Read More...</button>
+                </div>
+            </div>
+        </div>
     </main>
-<footer>
+    <!--Main section-->
 
-</footer>
-
+    <!--Footer-->
+    <footer>
+        <div>
+            <p>
+                Copyright &#169
+            </p>
+        </div>
+    </footer>
+    <!--/Footer-->
 </body>
 
 </html>
