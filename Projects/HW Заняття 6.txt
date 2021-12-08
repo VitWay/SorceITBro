@@ -1,3 +1,4 @@
+HW6
 1. transform all stylea to BEM (or OOCSS)
 2. learn display: grid in depth
 3. learn transform, animations, keyframes
@@ -6,4 +7,8 @@
 6. use create theme for multiple pages (use semantic layout for new pages)
 7. create layout with header (static in page) and footer + content
 8. create serch bar with button inside input
-use mixins less to share common styles
+9. use mixins less to share common styles
+
+
+HW7
+1. Transform styles from last hw into less + BEM
