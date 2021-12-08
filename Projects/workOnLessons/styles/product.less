@@ -1,33 +1,38 @@
-
+@import './theme/variables.less';
 
 .main__product {
     background-color: #eee;
-    display: flex;
-    cursor: pointer;
+    display         : flex;
+    cursor          : pointer;
 
-    &:hover{
+    &:hover {
         background-color: rgb(209, 203, 203);
     }
+
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+
     &.main__price {
         font-weight: bold;
     }
+
     &>section {
         padding: 10px;
     }
+
     &.main__details {
-        border-left: 1 px solid #dcdcdc;
+        border-left : 1 px solid #dcdcdc;
         border-right: 1 px solid #dcdcdc;
     }
-    @media (max-width: 500px) {
+
+    @media (max-width: @device-xs-size ) {
         .main__product {
             flex-wrap: wrap;
         }
-}
+    }
 
-    .main__product .main__details {
+    & .main__details {
         order: 3;
     }
 
@@ -35,30 +40,31 @@
         order: 1;
     }
 
-    .main__product .main__actions {
-        order: 2;
-        display: flex;
+    & .main__actions {
+        order          : 2;
+        display        : flex;
         justify-content: end;
-        flex-direction: column;
-        flex-basis: 0;
+        flex-direction : column;
+        flex-basis     : 0;
     }
-}
 
-.main__product .main__preview-img {
-    width: 150px;
+
+& .main__preview-img {
+    width : 150px;
     height: 200px;
 }
 
-.main__product .main__price {
+& .main__price {
     text-align: center;
+}
 }
 
 #filters {
-    width: 350px;
+    width       : 350px;
     border-right: 1px solid #eee;
 }
 
-@media (max-width: 500px) {
+@media (max-width:  @device-xs-size) {
     #filters {
         display: none;
     }
@@ -67,21 +73,5 @@
 #products {
     padding: 10px;
 }
-.main__container{
-    display: grid;
-    height: 20px;
-    border: 2px solid #dcdcdc ;
-}
-.main__inner{
-    width: 50%;
-    height: 90%;
-    background-color: rgb(185, 197, 207);
-    color: aquamarine;
-    align-items: center;
-    justify-content: center;
-    transition: transform 900ms ease-in-out;
-    padding-left: ceil(10px);
-}
-.main__container:hover .main__inner{
-    transform: translate(100%);
-}
+
+

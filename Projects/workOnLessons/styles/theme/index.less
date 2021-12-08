@@ -1,5 +1,9 @@
 @import './button.less';
 @import './variables.less';
+@import './header.less';
+@import './footer.less';
+@import './icon.less';
+
 
 
 /* general styles */
@@ -24,67 +28,6 @@ body {
     /*vh, vw*/
 }
 
-/* header styles */
-header {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(58deg, rgba(2, 0, 36, 1) 0%,
-            rgba(223, 140, 25, 0.9532855378479517) 35%, rgba(0, 212, 255, 1) 100%);
-    padding        : calc(var(--grid-base) * 2);
-    display        : flex;
-    justify-content: space-between;
-    align-items    : center;
-    position       : fixed;
-    top            : 0;
-    left           : 0;
-    right          : 0;
-}
-
-header .header__left-panel {
-    display    : flex;
-    align-items: center;
-    flex       : 2;
-}
-
-header .heaer__logo {
-    width : calc(var(--grid-base) * 15);
-    height: calc(var(--grid-base) * 8);
-}
-
-@media(max-width: @device-xs-size) {
-    header .header__logo {
-        display: none;
-    }
-}
-
-header .header__left-panel>*:not(:last-child) {
-    margin-right: calc(var(--grid-base) * 2);
-}
-
-header .header__main-panel {
-    flex: 3;
-}
-
-header .header__right-panel {
-    flex           : 2;
-    display        : flex;
-    justify-content: end;
-}
-
-
-
-/* footer */
-footer {
-    background-color: #eee;
-    padding         : calc(var(--grid-base) * 2);
-    display         : flex;
-    align-items     : center;
-    justify-content : space-between;
-}
-
-footer>ul {
-    display: flex;
-}
-
 /* main block */
 main {
     display   : flex;
@@ -97,6 +40,29 @@ main {
         margin-top: calc(var(--grid-base) * 10);
     }
 }
+
+/* main__container div */
+.main__container {
+    display: grid;
+    height : 20px;
+    border : 2px solid #dcdcdc;
+}
+
+.main__inner {
+    width           : 50%;
+    height          : 90%;
+    background-color: rgb(185, 197, 207);
+    color           : aquamarine;
+    align-items     : center;
+    justify-content : center;
+    transition      : transform 900ms ease-in-out;
+    padding-left    : ceil(10px);
+}
+
+.main__container:hover .main__inner {
+    transform: translate(100%);
+}
+
 
 /* aside */
 aside:not(.aside-opened) {
@@ -115,7 +81,6 @@ aside:not(.aside-opened) {
     color   : rgb(90, 77, 77) !important;
 
 }
-
 
 @media(max-width: @device-xs-size) {
     .search-bar button {
@@ -161,23 +126,6 @@ ul {
     }
 }
 
-/* icons */
-.icon {
-    cursor: pointer;
-}
-
-.icon.icon-light {
-    color     : #fff;
-    transition: var(--transition-color);
-}
-
-.icon.icon-light:hover {
-    color: rgb(221, 221, 221)
-}
-
-d:hover {
-    color: rgb(153, 134, 83);
-}
 
 /* images */
 .logo {

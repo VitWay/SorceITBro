@@ -1,0 +1,48 @@
+@import './variables.less';
+
+header {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(58deg, rgba(2, 0, 36, 1) 0%,
+            rgba(223, 140, 25, 0.9532855378479517) 35%, rgba(0, 212, 255, 1) 100%);
+    padding        : calc(var(--grid-base) * 2);
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    position       : fixed;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+}
+
+&.header__left-panel {
+    display    : flex;
+    align-items: center;
+    flex       : 2;
+
+
+    & .heaer__logo {
+        width : calc(var(--grid-base) * 15);
+        height: calc(var(--grid-base) * 8);
+    }
+
+    @media(max-width: @device-xs-size) {
+        header .header__logo {
+            display: none;
+        }
+    }
+
+    &.header__left-panel>*:not(:last-child) {
+        margin-right: calc(var(--grid-base) * 2);
+    }
+
+}
+
+& .header__main-panel {
+    flex: 3;
+}
+
+& .header__right-panel {
+    flex           : 2;
+    display        : flex;
+    justify-content: end;
+}
