@@ -6,24 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VisitToUkraine</title>
-
+    <!--Preloader animaton-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="./styles/preloader.css">
+ -->
     <!--Normalize Style-->
     <link rel='stylesheet' href='./styles/normalize.css'>
     <!--Font Icons-->
     <link rel='stylesheet' href='./styles/all.css'>
     <!--Custom style-->
     <link rel='stylesheet' href='./styles/index.css'>
-
-
-
 </head>
 
 <body>
+
     <!--Naviration-->
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
                 <a href="#" class="text-gray">Visit to Ukraine</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
             <div>
                 <ul class="nav-items">
@@ -50,8 +56,32 @@
     </nav>
     <!--EndNavigation-->
 
-    <script src='./scripts/main.js'></script>
+    <!--HW Position-->
+    <div id='position'>
+        <h1 id='status'></h1>
+        <button id='find-state'>Find My State</button>
+    </div>
+    <script src="./scripts/geoscript.js"></script>
 
+    <!-- Main Site Secion  -->
+    <main>
+        <!--Site Title-->
+<!--         <section class="site-title">
+            <div class="site-background">
+                <h3> Tours and Travels </h3>
+                <h1> We get to know Ukraine Together</h1>
+                <button class="btn">Explore</button>
+            </div>
+        </section> -->
+    </main>
+    <!--end main section-->
+
+
+
+<!-- 
+
+    <script src='./scripts/main.js'></script>
+ -->
 </body>
 
 </html>

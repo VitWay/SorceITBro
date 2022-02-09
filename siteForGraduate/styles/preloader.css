@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background-color: rgb(68, 65, 60);
+}
+a .text-gray{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: azure;
+    font-size: 20rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    border-bottom: 2rem solid #3d3535;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: 'Visit to Ukraine';
+        color: red;
+    }
+}
